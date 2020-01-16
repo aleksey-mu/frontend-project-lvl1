@@ -1,13 +1,13 @@
 # Makefile
 
 lint:
-    npx eslint
+	npx eslint
 
 install:
-    npm install
+	npm install
 
 start:
-    npx babel-node src/brain-games.js
+	npx babel-node src/brain-games.js
 
 publish:
-    npm publish --dry-run
+	npm publish --dry-run
