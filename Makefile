@@ -1,7 +1,7 @@
 # Makefile
 
 lint:
-	npx eslint
+	npx eslint .
 
 install:
 	npm install
