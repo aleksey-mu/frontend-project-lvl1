@@ -1,39 +1,53 @@
 import readlineSync from 'readline-sync';
 
-const randomNum = () => {
-  const min = 1;
-  const max = 101;
-  return Math.floor(Math.random() * (max - min)) + min;
+const randomNum = (min = 1, max = 101) => Math.floor(Math.random() * (max - min)) + min;
+
+const randomExpressionPrint = (num1, num2) => {
+  const operator = randomNum(0, 3);
+  switch (operator) {
+    case 0:
+      console.log(`Question: ${num1} + ${num2}`);
+      return num1 + num2;
+    case 1:
+      console.log(`Question: ${num1} - ${num2}`);
+      return num1 - num2;
+    default:
+      console.log(`Question: ${num1} * ${num2}`);
+      return num1 * num2;
+  }
 };
 
-const question = (name) => {
-  const number = randomNum();
-  let correctAnswer = null;
-  // eslint-disable-next-line no-unused-expressions
-  number % 2 === 0 ? correctAnswer = 'yes' : correctAnswer = 'no';
-  console.log(`Question: ${number}`);
+
+const questionCalc = (name) => {
+  const num1 = randomNum(1, 20);
+  const num2 = randomNum(1, 20);
+  let isFalse = true;
+  const correctAnswer = randomExpressionPrint(num1, num2);
   const answer = readlineSync.question('Your answer: ');
 
-  if (answer === correctAnswer) {
+  if (answer === correctAnswer.toString()) {
     console.log('Correct!');
-    return false;
+    isFalse = false;
+    return isFalse;
   }
   console.log(`\`${answer}\` is wrong answer ;(. Correct answer was \`${correctAnswer}\`.\nLet's try again, ${name}`);
-  return true;
+  isFalse = true;
+  return isFalse;
 };
 
-const evenGame = () => {
-  console.log('Welcome to the Brain Games!\nAnswer "yes" if the number is even, otherwise answer "no".\n');
+
+const evenCacl = () => {
+  console.log('Welcome to the Brain Games!\nWhat is the result of the expression?\n');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
 
   for (let i = 1; i <= 3; i += 1) {
-    const exitStatus = question(name);
+    const exitStatus = questionCalc(name);
     if (exitStatus === true) {
       break;
     }
   }
 };
 
-export default evenGame;
+export default evenCacl;

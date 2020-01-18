@@ -7,7 +7,7 @@ install:
 	npm install
 
 start:
-	npx babel-node src/brain-even.js
+	npx babel-node src/brain-calc.js
 
 publish:
 	npm publish --dry-run
