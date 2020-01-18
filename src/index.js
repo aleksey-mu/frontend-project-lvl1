@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import questionCalc from './games/gameCalc';
-import questionEven from './games/gameEven';
+// import questionEven from './games/gameEven';
 
 const startGame = () => {
   console.log('Welcome to the Brain Games!\nWhat is the result of the expression?\n');
