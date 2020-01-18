@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-calc.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "files": [
     "dist"
