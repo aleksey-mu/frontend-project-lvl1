@@ -12,6 +12,11 @@
 
 [![asciicast](https://asciinema.org/a/geDG0CaXRUlYCD8xtqDE0tceH.svg)](https://asciinema.org/a/geDG0CaXRUlYCD8xtqDE0tceH)
 
+
+"Progression" game recording:
+
+[![asciicast](https://asciinema.org/a/c0qk4Yz8p8BaEAOe7MJXDCJu9.svg)](https://asciinema.org/a/c0qk4Yz8p8BaEAOe7MJXDCJu9)
+
 "Prime" game recording:
 
 [![asciicast](https://asciinema.org/a/IROJLYZ5PvpjGdpWdsgLginPS.svg)](https://asciinema.org/a/IROJLYZ5PvpjGdpWdsgLginPS)
