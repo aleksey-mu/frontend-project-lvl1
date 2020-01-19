@@ -22,18 +22,4 @@ const questionEven = (name) => {
   return true;
 };
 
-const evenGame = () => {
-  console.log('Welcome to the Brain Games!\nAnswer "yes" if the number is even, otherwise answer "no".\n');
-
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
-
-  for (let i = 1; i <= 3; i += 1) {
-    const exitStatus = questionEven(name);
-    if (exitStatus === true) {
-      break;
-    }
-  }
-};
-
-export default evenGame;
+export default questionEven;

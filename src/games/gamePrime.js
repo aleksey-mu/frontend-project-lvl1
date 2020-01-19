@@ -28,5 +28,4 @@ const questionPrime = (name) => {
   return isFalse;
 };
 
-
 export default questionPrime;

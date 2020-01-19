@@ -3,16 +3,16 @@ import readlineSync from 'readline-sync';
 const randomNum = (min = 1, max = 101) => Math.floor(Math.random() * (max - min)) + min;
 
 const euclid = (num1, num2) => {
-  let a = num1;
-  let b = num2;
-  while (a !== 0 && b !== 0) {
-    if (a > b) {
-      a %= b;
+  let n1 = num1;
+  let n2 = num2;
+  while (n1 !== 0 && n2 !== 0) {
+    if (n1 > n2) {
+      n1 %= n2;
     } else {
-      b %= a;
+      n2 %= n1;
     }
   }
-  return a + b;
+  return n1 + n2;
 };
 
 const questionGcd = (name) => {
@@ -32,6 +32,5 @@ const questionGcd = (name) => {
   isFalse = true;
   return isFalse;
 };
-
 
 export default questionGcd;

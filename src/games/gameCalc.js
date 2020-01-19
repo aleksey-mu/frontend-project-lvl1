@@ -17,8 +17,7 @@ const randomExpressionPrint = (num1, num2) => {
   }
 };
 
-
-const questionCalc = (name) => {
+const gameCalc = (name) => {
   const num1 = randomNum(1, 20);
   const num2 = randomNum(1, 20);
   let isFalse = true;
@@ -35,5 +34,4 @@ const questionCalc = (name) => {
   return isFalse;
 };
 
-
-export default questionCalc;
+export default gameCalc;

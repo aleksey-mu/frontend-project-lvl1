@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 
 const randomNum = (min = 1, max = 101) => Math.floor(Math.random() * (max - min)) + min;
 
-
 const progressionBuilding = () => {
   const progressionStep = randomNum(2, 10);
   const start = randomNum(1, 20);
@@ -13,7 +12,6 @@ const progressionBuilding = () => {
   }
   return progression;
 };
-
 
 const questionProgression = (name) => {
   const progression = progressionBuilding();
@@ -35,6 +33,5 @@ const questionProgression = (name) => {
   isFalse = true;
   return isFalse;
 };
-
 
 export default questionProgression;
