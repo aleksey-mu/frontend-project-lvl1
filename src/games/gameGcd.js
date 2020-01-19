@@ -19,7 +19,6 @@ const questionGcd = (name) => {
   const num1 = randomNum();
   const num2 = randomNum();
   const gcd = euclid(num1, num2);
-  // questionPrint(num1, num2, gcd);
   console.log(`Question: ${num1} ${num2}`);
   const answer = readlineSync.question('Your answer: ');
   let isFalse = false;
