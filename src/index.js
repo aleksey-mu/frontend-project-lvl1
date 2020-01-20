@@ -39,8 +39,9 @@ const startGame = () => {
       console.log('Sorry, uknown input');
       break;
   }
+  const numberOfRounds = 3;
   if (question !== null) {
-    for (let i = 1; i <= 3; i += 1) {
+    for (let i = 1; i <= numberOfRounds; i += 1) {
       const isAnswerWrong = question(name);
       if (isAnswerWrong === true) {
         break;
