@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.com/aleksey-mu/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/aleksey-mu/frontend-project-lvl1) [![Maintainability](https://api.codeclimate.com/v1/badges/e50bb0accdc76a641a90/maintainability)](https://codeclimate.com/github/aleksey-mu/frontend-project-lvl1/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e50bb0accdc76a641a90/test_coverage)](https://codeclimate.com/github/aleksey-mu/frontend-project-lvl1/test_coverage)
 
+Hi! Here's some games for you. You can choose the game you like by entering the number.
+
+![Game Preview](https://sun9-38.userapi.com/c858420/v858420879/159e64/gBwRkF4Jme4.jpg)
+
 "Even?" game recording:
 
 [![asciicast](https://asciinema.org/a/PI7sHYgx3snxDh5lOzRGnaA7e.svg)](https://asciinema.org/a/PI7sHYgx3snxDh5lOzRGnaA7e)
